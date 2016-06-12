@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>Hello MUI</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" href="css/mui.min.css">
+		<link rel="stylesheet" href="css/iconfont.css">
+		
+		<style type="text/css">
+			#list {
+				/*避免导航边框和列表背景边框重叠，看起来像两条边框似得；*/
+				margin-top: -1px;
+			}
+			.hehe {
+				font-size: 30px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="slider" class="mui-slider">
+			<div class="mui-slider-group mui-slider-loop">
+				<!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+				<div class="mui-slider-item mui-slider-item-duplicate">
+					<a href="#">
+						<img src="images/1.jpg">
+					</a>
+				</div>
+				<!-- 第一张 -->
+				<div class="mui-slider-item">
+					<a href="#">
+						<img src="images/yuantiao.jpg">
+					</a>
+				</div>
+				<!-- 第二张 -->
+				<div class="mui-slider-item">
+					<a href="#">
+						<img src="images/2.jpg">
+					</a>
+				</div>
+				<!-- 第三张 -->
+				<div class="mui-slider-item">
+					<a href="#">
+						<img src="images/1.jpg">
+					</a>
+				</div>
+				<!-- 第四张 -->
+				<div class="mui-slider-item">
+					<a href="#">
+						<img src="images/3.jpg">
+					</a>
+				</div>
+				<!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+				<div class="mui-slider-item mui-slider-item-duplicate">
+					<a href="#">
+						<img src="images/yuantiao.jpg">
+					</a>
+				</div>
+			</div>
+
+			<div class="mui-slider-indicator">
+				<div class="mui-indicator mui-active"></div>
+				<div class="mui-indicator"></div>
+				<div class="mui-indicator"></div>
+				<div class="mui-indicator"></div>
+			</div>
+
+		</div>
+
+		<ul class="mui-table-view mui-grid-view mui-grid-9">
+			<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+				<a href="#">
+					<span class="mui-icon iconfont icon-anonymous-iconfont" style="color: #00BB9C;font-size: 30px;"></span>
+					<div class="mui-media-body">相册</div>
+				</a>
+			</li>
+
+			<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+				<a href="#">
+					<span class="mui-icon iconfont icon-location" style="color: #AB6EC1;font-size: 30px;"></span>
+					<div class="mui-media-body">定位</div>
+				</a>
+			</li>
+			<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+				<a href="#">
+					<span class="mui-icon iconfont icon-shequ" style="color: #364A62;font-size: 30px;"></span>
+					<div class="mui-media-body">社区</div>
+				</a>
+			</li>
+
+			<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+				<a href="#">
+					<span class="mui-icon iconfont icon-haoyou" style="color: #EC8415;font-size: 30px;"></span>
+					<div class="mui-media-body">好友</div>
+				</a>
+			</li>
+			<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+				<a href="#">
+					<span class="mui-icon iconfont icon-camera" style="color: #6A6A6A;font-size: 30px;"></span>
+					<div class="mui-media-body">照相</div>
+				</a>
+			</li>
+			<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+				<a href="#">
+					<span class="mui-icon iconfont icon-fankui" style="color: #F4C600;font-size: 30px;"></span>
+					<div class="mui-media-body">反馈</div>
+				</a>
+			</li>
+			<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+				<a href="#">
+					<span class="mui-icon iconfont icon-message" style="color: #52D27F;font-size: 30px;"></span>
+					<div class="mui-media-body">信息</div>
+				</a>
+			</li>
+			<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+				<a href="#">
+					<span class="mui-icon iconfont icon-fenxiang" style="color: #6CB5E6;font-size: 30px;"></span>
+					<div class="mui-media-body">分享</div>
+				</a>
+			</li>
+			<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+				<a href="#">
+					<span class="mui-icon iconfont icon-more" style="color: #EE8374;font-size: 30px;"></span>
+					<div class="mui-media-body">更多</div>
+				</a>
+			</li>
+		</ul>
+
+		<script src="js/mui.min.js"></script>
+		<script>
+			var slider = mui("#slider");
+			slider.slider({
+				interval: 4000
+			});
+			var aniShow = "pop-in";
+			//只有ios支持的功能需要在Android平台隐藏；
+			if (mui.os.android) {
+				var list = document.querySelectorAll('.ios-only');
+				if (list) {
+					for (var i = 0; i < list.length; i++) {
+						list[i].style.display = 'none';
+					}
+				}
+				//Android平台暂时使用slide-in-right动画
+				if (parseFloat(mui.os.version) < 4.4) {
+					aniShow = "slide-in-right";
+				}
+			}
+			
+			var templates = {};
+			var getTemplate = function(name, header, content) {
+				var template = templates[name];
+				if (!template) {
+					//预加载共用父模板；
+					var headerWebview = mui.preload({
+						url: header,
+						id: name + "-main",
+						styles: {
+							popGesture: "hide",
+						},
+						extras: {
+							mType: 'main'
+						}
+					});
+					//预加载共用子webview
+					var subWebview = mui.preload({
+						url: !content ? "" : content,
+						id: name + "-sub",
+						styles: {
+							top: '45px',
+							bottom: '0px',
+						},
+						extras: {
+							mType: 'sub'
+						}
+					});
+					subWebview.addEventListener('loaded', function() {
+						setTimeout(function() {
+							subWebview.show();
+						}, 50);
+					});
+					subWebview.hide();
+					headerWebview.append(subWebview);
+					//iOS平台支持侧滑关闭，父窗体侧滑隐藏后，同时需要隐藏子窗体；
+					if (mui.os.ios) { //5+父窗体隐藏，子窗体还可以看到？不符合逻辑吧？
+						headerWebview.addEventListener('hide', function() {
+							subWebview.hide("none");
+						});
+					}
+					templates[name] = template = {
+						name: name,
+						header: headerWebview,
+						content: subWebview,
+					};
+				}
+				return template;
+			};
+			var initTemplates = function() {
+				getTemplate('default', 'examples/template.html');
+			};
+			mui.plusReady(function() {
+				//读取本地存储，检查是否为首次启动
+				var showGuide = plus.storage.getItem("lauchFlag");
+				if (showGuide) {
+					//有值，说明已经显示过了，无需显示；
+					//关闭splash页面；
+					plus.navigator.closeSplashscreen();
+					plus.navigator.setFullscreen(false);
+					//初始化模板
+					initTemplates();
+					//预加载
+//					preload();
+				} else {
+					//显示启动导航
+					mui.openWindow({
+						id: 'guide',
+						url: 'examples/guide.html',
+						show: {
+							aniShow: 'none'
+						},
+						waiting: {
+							autoShow: false
+						}
+					});
+					//延迟的原因：优先打开启动导航页面，避免资源争夺
+					setTimeout(function() {
+						//初始化模板
+						initTemplates();
+						//预加载
+						preload();
+					}, 200);
+				}
+			});
+		</script>
+	</body>
+
+</html>

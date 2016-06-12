@@ -1,0 +1,169 @@
+{
+	"index.html": {
+		"resources": [
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"css/mui.min.css",
+			"js/update.js",
+			"list.html",
+			"css/app.css",
+			"images/2.jpg",
+			"images/yuantiao.jpg",
+			"images/1.jpg",
+			"images/3.jpg",
+			"images/globe.png",
+			"images/camera.png",
+			"images/ADRESSESBOOK.png",
+			"images/Photos.png",
+			"images/camera1.png",
+			"images/message.png",
+			"images/message-green.png",
+			"images/makefriends.png",
+			"images/share.png",
+			"images/more.png"
+		],
+		"refer": [
+			"index-menu.html",
+			"list.html",
+			"details.html",
+			"index-menu1.html",
+			"examples/info.html",
+			"homePage.html"
+		]
+	},
+	"list.html": {
+		"refer": [
+			"examples/guide.html",
+			"examples/template.html",
+			"examples/tab-webview-main.html",
+			"examples/pullrefresh_main.html"
+		],
+		"resources": [
+			"images/2.jpg",
+			"fonts/mui.ttf",
+			"images/makefriends.png",
+			"images/3.jpg",
+			"images/globe.png",
+			"images/yuantiao.jpg",
+			"images/ADRESSESBOOK.png",
+			"images/camera1.png",
+			"js/mui.min.js",
+			"images/message.png",
+			"images/1.jpg",
+			"css/mui.min.css",
+			"images/share.png",
+			"images/Photos.png",
+			"images/message-green.png",
+			"images/more.png",
+			"images/xiangce.png",
+			"images/信息.png",
+			"images/messages.png",
+			"images/camera.png",
+			"images/location.png",
+			"images/shequ.png",
+			"images/feedback.png",
+			"css/iconfont.css",
+			"fonts/iconfont.ttf"
+		]
+	},
+	"examples/tab-webview-subpage-contact.html": {
+		"resources": [
+			"images/60x60.gif"
+		],
+		"refer": []
+	},
+	"examples/tab-webview-main.html": {
+		"resources": [
+			"examples/tab-webview-subpage-about.html",
+			"fonts/mui.ttf"
+		],
+		"refer": [
+			"examples/tab-webview-subpage-setting.html",
+			"examples/tab-webview-subpage-chat.html",
+			"examples/tab-webview-subpage-contact.html",
+			"examples/tab-webview-subpage-about.html"
+		]
+	},
+	"examples/pullrefresh_main.html": {
+		"resources": [
+			"examples/pullrefresh_sub.html"
+		],
+		"refer": [
+			"examples/pullrefresh_sub.html"
+		]
+	},
+	"details.html": {
+		"href": "details.html",
+		"resources": [
+			"css/mui.min.css",
+			"js/mui.min.js",
+			"images/mengmeng.png",
+			"fonts/mui.ttf",
+			"images/1.jpg",
+			"images/5.jpg",
+			"images/2.jpg",
+			"images/3.jpg",
+			"images/yuantiao.jpg",
+			"images/cbd.jpg",
+			"css/app.css",
+			"images/man.png",
+			"css/iconfont.css",
+			"fonts/iconfont.ttf",
+			"js/jquery.js"
+		],
+		"refer": [],
+		"priority": 0
+	},
+	"index-menu.html": {
+		"refer": [
+			"examples/offcanvas-drag-left.html",
+			"examples/pullrefresh_main.html"
+		],
+		"resources": []
+	},
+	"examples/offcanvas-drag-left.html": {
+		"resources": [
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"css/mui.min.css"
+		],
+		"refer": []
+	},
+	"index-menu1.html": {
+		"resources": [
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"css/mui.min.css",
+			"images/bg1.jpg",
+			"images/11.jpg",
+			"images/12.jpg"
+		],
+		"refer": []
+	},
+	"examples/info.html": {
+		"href": "examples/info.html",
+		"resources": [
+			"css/mui.min.css",
+			"css/app.css",
+			"js/mui.min.js",
+			"images/qrcode.png"
+		],
+		"refer": [],
+		"priority": 0
+	},
+	"examples/template.html": {
+		"resources": [
+			"fonts/mui.ttf"
+		]
+	},
+	"homePage.html": {
+		"resources": [
+			"images/2.jpg",
+			"images/yuantiao.jpg",
+			"images/1.jpg",
+			"css/iconfont.css",
+			"fonts/iconfont.ttf",
+			"images/3.jpg"
+		]
+	}
+}

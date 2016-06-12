@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>Joker's tester</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<!--<meta name="apple-mobile-web-app-capable" content="yes">-->
+		<!--<meta name="apple-mobile-web-app-status-bar-style" content="black">-->
+
+		<!--标准mui.css-->
+		<link rel="stylesheet" href="css/mui.min.css">
+		<link rel="stylesheet" href="css/iconfont.css">
+		<style>
+			header {
+				background: -webkit-gradient(linear, 0 0, 100% 0, from(#aa87E7), to(#2187E7));
+			}
+			
+			.mui-bar-nav {
+				box-shadow: none;
+				-webkit-box-shadow: none;
+			}
+			
+			#slider {
+				margin-top: 44px;
+			}
+			
+			#belowHeader {
+				height: 130px;
+				background: -webkit-gradient(linear, 0 0, 100% 0, from(#aa87E7), to(#2187E7));
+				margin-top: 44px;
+			}
+			
+			#touxiang {
+				border-radius: 50px;
+				border: 3px solid #8Baaaa;
+				position: relative;
+				top: 16px;
+				left: 50%;
+				margin: 0 0 0 -50px;
+				height: 100px;
+				width: 100px;
+			}
+			
+			#preview {
+				margin-top: 9px;
+				height: 76px;
+			}
+			
+			.my-img {
+				margin-left: 10px;
+				margin-right: -5px;
+				height: 66px;
+				width: 100px;
+			}
+			
+			.dgroup-item {
+				height: 50px;
+				border-top: 1px solid #dedede;
+			}
+			
+			.dgroup-item-desc {
+				float: left;
+				color: #47565F;
+				font-size: medium;
+				line-height: 50px;
+				margin-left: 10px;
+			}
+			
+			.dgroup-item-content {
+				position: absolute;
+				left: 100px;
+				line-height: 50px;
+				color: #383838;
+				font-size: medium;
+			}
+			
+			.dgroup-item-tag {
+				position: relative;
+				left: 60px;
+				margin-top: 15px;
+				margin-right: 5px;
+			}
+			
+			#ttt {
+				position: absolute;
+				left: 100px;
+				right: 10px;
+				margin-top: 10px;
+				margin-bottom: 10px;
+				width: auto;
+				font-size: medium;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title" style="color: white;">资料详情</h1>
+		</header>
+		<div id="belowHeader">
+			<img id="touxiang" src="images/5.jpg"></img>
+		</div>
+		<div id="preview">
+			<img class="my-img" src="images/yuantiao.jpg" />
+			<img class="my-img" src="images/cbd.jpg" />
+		</div>
+		<div class="dgroup-item">
+			<div class="dgroup-item-desc">昵称</div>
+			<div class="dgroup-item-content">Joker</div>
+		</div>
+		<div class="dgroup-item">
+			<div class="dgroup-item-desc">性别</div>
+			<span class="mui-icon iconfont icon-xingbienan dgroup-item-content" style="font-size: 25px;color: #33475F;margin-top: 2px;"></span>
+		</div>
+		<div class="dgroup-item">
+			<div class="dgroup-item-desc">生日</div>
+			<div class="dgroup-item-content">1987.08.16</div>
+		</div>
+		<div class="dgroup-item">
+			<div class="dgroup-item-desc">所在地</div>
+			<div class="dgroup-item-content">深圳 龙华新区</div>
+		</div>
+		<div class="dgroup-item">
+			<div class="dgroup-item-desc">标签</div>
+			<span class="mui-badge mui-badge-success  dgroup-item-tag">屌丝</span>
+			<span class="mui-badge mui-badge-warning dgroup-item-tag">IT男</span>
+			<span class="mui-badge mui-badge-danger dgroup-item-tag">不要再说了</span>
+		</div>
+		<div class="dgroup-item">
+			<div class="dgroup-item-desc">个性签名</div>
+			<textarea class="test" id="ttt" rows="2" placeholder="请写下你的满腹牢骚"></textarea>
+		</div>
+		
+		<script src="js/mui.min.js"></script>
+		<script src="js/jquery.js"></script>
+		<script type="text/javascript" charset="utf-8">
+			mui.init({
+				swipeBack: true
+			});
+		</script>
+	</body>
+
+</html>
