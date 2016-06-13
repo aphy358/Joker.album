@@ -20,7 +20,8 @@
 			"images/message-green.png",
 			"images/makefriends.png",
 			"images/share.png",
-			"images/more.png"
+			"images/more.png",
+			"homePage.html"
 		],
 		"refer": [
 			"index-menu.html",
@@ -163,7 +164,9 @@
 			"images/1.jpg",
 			"css/iconfont.css",
 			"fonts/iconfont.ttf",
-			"images/3.jpg"
+			"images/3.jpg",
+			"js/mui.min.js",
+			"css/mui.min.css"
 		]
 	}
 }

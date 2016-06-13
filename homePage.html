@@ -18,6 +18,10 @@
 			.hehe {
 				font-size: 30px;
 			}
+			
+			.grid-9-text {
+				color: #47565F !important;
+			}
 		</style>
 	</head>
 
@@ -75,57 +79,57 @@
 			<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
 				<a href="#">
 					<span class="mui-icon iconfont icon-anonymous-iconfont" style="color: #00BB9C;font-size: 30px;"></span>
-					<div class="mui-media-body">相册</div>
+					<div class="mui-media-body grid-9-text">相册</div>
 				</a>
 			</li>
 
 			<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
 				<a href="#">
 					<span class="mui-icon iconfont icon-location" style="color: #AB6EC1;font-size: 30px;"></span>
-					<div class="mui-media-body">定位</div>
+					<div class="mui-media-body grid-9-text">定位</div>
 				</a>
 			</li>
 			<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
 				<a href="#">
 					<span class="mui-icon iconfont icon-shequ" style="color: #364A62;font-size: 30px;"></span>
-					<div class="mui-media-body">社区</div>
+					<div class="mui-media-body grid-9-text">社区</div>
 				</a>
 			</li>
 
 			<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
 				<a href="#">
 					<span class="mui-icon iconfont icon-haoyou" style="color: #EC8415;font-size: 30px;"></span>
-					<div class="mui-media-body">好友</div>
+					<div class="mui-media-body grid-9-text">好友</div>
 				</a>
 			</li>
 			<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
 				<a href="#">
 					<span class="mui-icon iconfont icon-camera" style="color: #6A6A6A;font-size: 30px;"></span>
-					<div class="mui-media-body">照相</div>
+					<div class="mui-media-body grid-9-text">照相</div>
 				</a>
 			</li>
 			<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
 				<a href="#">
 					<span class="mui-icon iconfont icon-fankui" style="color: #F4C600;font-size: 30px;"></span>
-					<div class="mui-media-body">反馈</div>
+					<div class="mui-media-body grid-9-text">反馈</div>
 				</a>
 			</li>
 			<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
 				<a href="#">
 					<span class="mui-icon iconfont icon-message" style="color: #52D27F;font-size: 30px;"></span>
-					<div class="mui-media-body">信息</div>
+					<div class="mui-media-body grid-9-text">信息</div>
 				</a>
 			</li>
 			<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
 				<a href="#">
 					<span class="mui-icon iconfont icon-fenxiang" style="color: #6CB5E6;font-size: 30px;"></span>
-					<div class="mui-media-body">分享</div>
+					<div class="mui-media-body grid-9-text">分享</div>
 				</a>
 			</li>
 			<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
 				<a href="#">
 					<span class="mui-icon iconfont icon-more" style="color: #EE8374;font-size: 30px;"></span>
-					<div class="mui-media-body">更多</div>
+					<div class="mui-media-body grid-9-text">更多</div>
 				</a>
 			</li>
 		</ul>
@@ -199,9 +203,9 @@
 				}
 				return template;
 			};
-			var initTemplates = function() {
-				getTemplate('default', 'examples/template.html');
-			};
+//			var initTemplates = function() {
+//				getTemplate('default', 'examples/template.html');
+//			};
 			mui.plusReady(function() {
 				//读取本地存储，检查是否为首次启动
 				var showGuide = plus.storage.getItem("lauchFlag");
@@ -211,7 +215,7 @@
 					plus.navigator.closeSplashscreen();
 					plus.navigator.setFullscreen(false);
 					//初始化模板
-					initTemplates();
+//					initTemplates();
 					//预加载
 //					preload();
 				} else {
@@ -229,7 +233,7 @@
 					//延迟的原因：优先打开启动导航页面，避免资源争夺
 					setTimeout(function() {
 						//初始化模板
-						initTemplates();
+//						initTemplates();
 						//预加载
 						preload();
 					}, 200);
