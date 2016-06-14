@@ -128,12 +128,12 @@
 			"splashscreen": {
 				"ios": {
 					"iphone": {
-						"default": "", /*必选，320x480，iPhone3启动图片*/
-						"retina35": "",/*必选，640x960，3.5英寸设备(iPhone4)启动图片*/
-						"retina40": "" /*4.0 英寸设备(iPhone5)启动图片*/
+						 /*必选，320x480，iPhone3启动图片*/
+						/*必选，640x960，3.5英寸设备(iPhone4)启动图片*/
+						 /*4.0 英寸设备(iPhone5)启动图片*/
 					},
 					"ipad": {
-						"portrait": "", /*可选，768x1004，需支持iPad时必选，iPad竖屏启动图片*/
+						 /*可选，768x1004，需支持iPad时必选，iPad竖屏启动图片*/
 						"portrait-retina": "",/*可选，1536x2008，需支持iPad时必选，iPad高分屏竖屏图片*/
 						"landscape": "", /*可选，1024x748，需支持iPad时必选，iPad横屏启动图片*/
 						"landscape-retina": "", /*可选 ，2048x1496，需支持iPad时必选，iPad高分屏横屏启动图片*/
@@ -144,11 +144,11 @@
 					}
 				},
 				"android": {
-					"mdpi": "", /*必选，240x282，普通屏启动图片*/
-					"ldpi": "", /*必选，320x442，大屏启动图片*/
-					"hdpi": "", /*必选，480x762，高分屏启动图片*/
-					"xhdpi": "", /*必选，720x1242，720P高分屏启动图片*/
-					"xxhdpi": "" /*1080p 高分屏启动图片*/
+					"mdpi": "images/startlogo.png", /*必选，240x282，普通屏启动图片*/
+					"ldpi": "images/startlogo.png", /*必选，320x442，大屏启动图片*/
+					"hdpi": "images/startlogo.png", /*必选，480x762，高分屏启动图片*/
+					"xhdpi": "images/startlogo.png", /*必选，720x1242，720P高分屏启动图片*/
+					"xxhdpi": "images/startlogo.png" /*1080p 高分屏启动图片*/
 				}
 			}
 		}
