@@ -13,10 +13,6 @@ UI只是粗略設計，請各位見諒！
 
 ![Joker.album Default View](https://github.com/aphy358/Joker.album/blob/master/images/ss2.jpg)
 
-这是个人详细信息页面
-
-![Joker.album Default View](https://github.com/aphy358/Joker.album/blob/master/images/ss1.jpg)
-
 这是滑动侧栏页面
 
 ![Joker.album Default View](https://github.com/aphy358/Joker.album/blob/master/images/ss3.jpg)
